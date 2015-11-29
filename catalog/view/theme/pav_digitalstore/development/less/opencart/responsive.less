@@ -1,0 +1,141 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
+	#search{
+		width: 175px;
+		 input {
+			width: 175px;
+		}
+	}
+
+}
+@media only screen and (min-width: 990px){
+	.pavcol-sm-5 {
+	    float: left;
+	    min-height: 1px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    position: relative;
+	    width: 20%;
+	}
+}
+
+@media only screen and (max-width: 990px) {
+	#topbar {
+		padding: 10px;
+	}
+.header-wrap .inner {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#pav-mainnav {
+		position: absolute!important;
+		content: "";
+		top: -3px;
+		width: 60px;
+		height: 60px!important;
+	}
+	.navbar-inverse .navbar-toggle{
+		display: block;
+		float: none;
+		width: 44px;
+		height: 35px;
+		background-color: @white;
+		border-color: @white;
+		.border-radius (0);
+	}
+	
+
+	.navbar-collapse.collapse  {
+		display:  none!important
+	}
+
+	.navbar-nav > li {
+		float: none;
+	}
+	
+	.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+		background-color: @theme-bg-hover;
+		border: 1px solid @theme-bg-hover;
+	}
+}
+@media only screen and (max-width: 749px){
+	#header #cart,
+	.box-services {
+		display: block !important;
+	    margin-bottom: 20px;
+	    width: 190px;
+	}
+	.wishlist-info td,
+	.wishlist-info th,		
+	table.history-list td, 
+	table.history-list th,				
+	table.order-info td, 
+	table.order-info th,		
+	table.compare-info td, 
+	table.compare-info th,
+	table.pav-checkout-product td,
+	table.pav-checkout-product th,
+	table.pav-shop-cart td,
+	table.pav-shop-cart th{
+		border-right: 0 none;
+		display: block !important;
+		float: none !important;
+		text-align: left !important;
+		width: auto !important;
+	}
+	.wishlist-info tr td:before,
+	table.history-list tr td:before,
+	table.order-info tr td:before,
+	table.pav-shop-cart tr td:before{
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-align: left;
+		white-space: nowrap;
+		width: 50%;
+	}
+	.wishlist-info tr td,
+	table.order-info tr td,
+	table.history-list tr td,
+	table.pav-shop-cart tr td {
+		text-align:right;
+		display: block;
+		min-height: 20px;
+		border-left: none;
+		background: none;
+	}
+	table.history-list thead,
+	table.order-info thead,
+	.wishlist-info thead,
+	table.pav-shop-cart thead {
+		 display:  none;
+	}
+	#header #cart, .box-services {
+	    margin-left: 35%;
+	}
+}
+@media (max-width: 769px) {
+}
+@media only screen and (max-width: 480px){
+	.show-mobile {
+		.quick-user .inner-toggle{
+            right: -130px!important;
+
+		}
+        .quick-access .inner-toggle {
+            right: -100px!important;
+        
+		}
+	}
+}
+@media only screen and (max-width: 320px){
+}
+

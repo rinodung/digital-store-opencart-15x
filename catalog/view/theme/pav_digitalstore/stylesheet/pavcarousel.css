@@ -1,0 +1,11 @@
+.pavcarousel {
+	padding: 25px;
+	overflow: hidden;
+}
+.pavcarousel .carousel-control.right {
+	right: -2px;
+}
+
+.pavcarousel .carousel-control.left {
+	left: -2px;
+}

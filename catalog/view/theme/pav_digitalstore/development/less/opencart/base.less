@@ -1,0 +1,435 @@
+/******************************************************
+ * @package Pav Opencart Theme Framework for Opencart 1.5.x
+ * @version 1.1
+ * @author http://www.pavothemes.com
+ * @copyright	Copyright (C) Augus 2013 PavoThemes.com <@emai:pavothemes@gmail.com>.All rights reserved.
+ * @license		GNU General Public License version 2
+*******************************************************/
+
+/**
+ * BASE CSS STYLES
+ */
+
+html {
+	overflow-y: scroll;
+	margin: 0;
+	padding: 0;
+}
+body {
+    overflow-x: hidden;
+    background-repeat: repeat-x;
+    background-position: center 100px;
+    line-height: 18px;
+    color: @gray-light;
+}
+ 
+
+.fs9{ font-size:@font-size-base - 3 ; }
+.fs10{ font-size:@font-size-base - 2; }
+.fs11{ font-size:@font-size-base - 1 ; }
+.fs12{ font-size:@font-size-base; }
+.fs13{ font-size:@font-size-base + 1; }
+.fs14{ font-size:@font-size-base + 2; }
+.fs15{ font-size:@font-size-base + 3; }
+.fs16{ font-size:@font-size-base + 4; }
+
+a {
+    img {
+        border: none;
+    }
+     &:hover {
+        text-decoration: none;
+        color: @theme-link-color-hover;
+    }
+    &:focus {
+        outline: none;
+        outline-offset: -2px;
+        color: @theme-link-color-hover;
+    }
+    cursor: hand;cursor: pointer;
+}
+
+img {
+    border: 0 none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul,ol {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+ul li , ol li {
+ line-height: 20px;
+}
+body, td, th, input, textarea, select, a {
+    outline: 0 none;
+}
+a,a:hover,a:focus{
+     .transition ( color 0.4s ease 0s);
+     text-decoration: none;
+}
+.quantity input,
+input[name="quantity"] {
+        width: auto;
+        display:  inline;
+        text-align: center;
+}
+/* TABLE STYLE */
+table.list {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 1px solid @table-border-color;
+    border-left: 1px solid @table-border-color;
+    margin-bottom: 20px;
+    thead {
+        td {
+            background-color: @table-bg;
+            padding: 0px 5px;
+        }
+    }
+    .center {
+        text-align: center;
+        padding: 7px;
+    }
+    tbody {
+        td {
+            padding: 0px 5px;
+        }
+    }
+    td {
+        border-right: 1px solid @table-border-color;
+        border-bottom: 1px solid @table-border-color;
+    }
+    .right {
+        text-align: right;
+        padding: 7px;
+    }
+    .left {
+        text-align: left;
+        padding: 7px;
+    }
+}
+table.list thead td a, .list thead td {
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+}
+input.large-field, select.large-field {
+    width: 300px;
+    border: @theme-border;
+    .border-radius (2px);    
+    color: #505050;
+    display: block;
+    font-size: @font-size-base;
+    height: 34px;
+    line-height: @line-height-base;
+    padding: 6px 12px;
+    .box-shadow ( 0 0 2px @bluelight inset );
+}
+table.form {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    & > * {
+        & > * {
+            & > td {
+                color: #000000;
+            }
+        }
+    }
+    td {
+        padding: 4px;
+    }
+    tr {
+        td:first-child {
+            width: 150px;
+        }
+    }
+}
+table.radio {
+    width: 100%;
+    border-collapse: collapse;
+    td {
+        padding: 5px;
+        label {
+            display: block;
+        }
+    }
+    tr {
+        td:first-child {
+            width: 1px;
+            input {
+                margin-top: 1px;
+            }
+        }
+    }
+    tr.highlight:hover {
+        td {
+            background: #F1FFDD;
+            cursor: pointer;
+        }
+    }
+}
+
+/*  Breadcrumb */
+.breadcrumb {
+    padding-top: 0;
+     padding-bottom: 0;
+    li:last-child {
+        &:before {
+            color: @theme-link-color-hover;
+        }
+        a {
+            color: @theme-link-color-hover;
+        }
+    }
+}
+/*  PAGINATION STYLE */
+
+.pagination {
+    padding-top: 8px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    .links {
+        float: left;
+        a,b{
+             border: 1px solid @theme-pagination-border;
+        }
+        a {
+            display: inline-block;
+            .border-radius(4px);
+            text-decoration: none;
+            background-color: @white;
+                height: 27px;
+                line-height: 27px;
+                text-align: center;
+                text-decoration: none;
+                width: 30px;
+
+            &:hover{
+                 background-color: @theme-pagination-active-bg;
+                 color: @theme-pagination-active-color;
+            }
+        }
+        b {
+            display: inline-block;
+            .border-radius(4px);
+            font-weight: normal;
+            text-decoration: none;
+            color: @theme-pagination-active-color;
+            background-color: @theme-pagination-active-bg;
+             height: 27px;
+                line-height: 27px;
+                text-align: center;
+                text-decoration: none;
+                width: 30px;
+        }
+    }
+    .results {
+        float: right;
+        padding-top: 3px;
+    }
+}
+
+/* button */
+input.button {
+    margin: 0;
+    border: 0;
+    height: 30px;
+    padding: 0px 15px;
+}
+.button, input.button {
+    cursor: pointer;
+    .transition( all 0.1s ease 0s);
+    border: 1px solid #c9c9c9;
+    .border-radius (3px);
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.button:hover, input.button:hover {
+    border: 1px solid @theme-link-color-hover;
+    color: @white;
+    background-color: @theme-link-color-hover;
+    .transition( all 0.1s ease 0s);
+}
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: @theme-link-color!important;
+    &:hover {
+        color: @white!important;
+    }
+}
+
+
+
+.buttons {
+    background:@btn-wrap-bg;
+    border: 1px solid @btn-wrap-border;
+    overflow: auto;
+    padding: 6px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .right {
+        float: right;
+        text-align: right;
+    }
+    .left {
+        float: left;
+        text-align: left;
+    }
+}
+
+/* tab style */
+
+.tabs-group {
+    background-color: @htab-bg ;
+    .box-shadow ( 0 0 3px @bluelight );
+    .border-radius ( 5px );
+    margin-bottom: @theme-margin + 5;
+}
+.htabs {
+    border-bottom: @htab-border;
+    a {
+        padding: @htab-nav-padding;
+        float: left;
+        font-size: @font-size-base + 4;
+        font-family: @heading-font-family;
+        text-align: center;
+        text-decoration: none;
+        color: @htab-nav-color;
+        margin-bottom: -1px;
+        display: none;
+        border-right: @htab-border;
+    }
+    a.selected {
+        background: @htab-bg-selected;
+        color:@htab-nav-selected-color;
+    }
+    > a {
+        .border-radius( 5px 0 0 0 );
+    }
+}
+
+.tab-content {
+	padding: @theme-padding;
+	margin-bottom: @theme-margin;
+	z-index: 2;
+ 
+}
+/* carousel */
+.carousel-controls {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 24px;
+    .carousel-control {
+        .border-radius(3px);
+        cursor: pointer;
+       
+    }
+}
+.carousel-control {
+    text-shadow: none;
+    width: 26px;
+    height: 26px;
+    background-color: #f4f4f4;
+    font-size: 22px;
+    line-height: 22px;
+    top: 38%;
+    cursor: pointer;
+    color: #b0b0b0;
+
+    .transition( all 0.3s ease 0s);
+    &:hover{
+        background-color: @theme-bg-hover;   
+        color: @white;
+        .transition( all 0.3s ease 0s);
+    }
+    &.left {
+        .border-radius(3px);
+        background-image: none;
+    }
+    &.right {
+        .border-radius (3px);
+        background-image: none;
+    }
+}
+
+/* links style */
+
+ul.links {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline-block;
+        margin-right: 4px;
+        line-height: @line-height-base;
+        > a {
+            span {
+                font-size: @font-size-base - 2;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+  ul.list{
+        > li {
+            padding: 10px 0 ;
+            + {
+                li {
+                }
+            }
+            ul {
+                display: none;
+                & > li {
+                    padding: 10px 0 0px 25px;
+                    & > a {
+                        text-decoration: none;
+                        display: block;
+                    }
+                    & > a.active {
+                    }
+                }
+            }
+            > a {
+                text-decoration: none;
+                background: url('@{image-theme-path}arrow-li.png') no-repeat left 4px;
+                padding-left: @theme-padding + 5;
+                &:hover ,&.active {
+                    background-position: left -46px;
+                }
+
+            }
+            a {
+                &:hover,&.active{
+                    .badge {
+                        background-color: @theme-link-color-hover;
+                    }
+                }
+            }
+            a.active {
+                color: @theme-link-color-hover;
+                + {
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+  

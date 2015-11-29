@@ -1,0 +1,8 @@
+2015-11-29 6:29:22 - PHP Notice:  Undefined index: list in /home/ubuntu/workspace/admin/controller/module/pavblog.php on line 224
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 42
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 47
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 53
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 47
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 53
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 47
+2015-11-29 6:38:09 - PHP Warning:  Division by zero in /home/ubuntu/workspace/catalog/view/theme/pav_digitalstore/template/pavblog/blogs.tpl on line 53

@@ -1,0 +1,50 @@
+
+.border-exclude-top(@border-deep; @border-type ; @border-color ){
+	border-bottom: @border-deep @border-type @border-color ;
+    border-left: @border-deep @border-type @border-color ;
+    border-right: @border-deep @border-type @border-color ;
+
+}
+
+.border-exclude-bottom(@border-deep; @border-type ; @border-color ){
+	border-top: @border-deep @border-type @border-color ;
+    border-left: @border-deep @border-type @border-color ;
+    border-right: @border-deep @border-type @border-color ;
+
+}
+ 
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.clearboxstyle(){
+  background: none;
+  border:none;
+}
+.linear-gradient-vertical(@color1; @color2; @color3){
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.16, @color1),
+    color-stop(0.53, @color2),
+    color-stop(0.83, @color3)
+    );
+    background-image: -o-linear-gradient(bottom, @color1 16%, @color2 53%, @color3 83%);
+    background-image: -moz-linear-gradient(bottom, @color1 16%, @color2 53%, @color3 83%);
+    background-image: -webkit-linear-gradient(bottom, @color1 16%, @color2 53%, @color3 83%);
+    background-image: -ms-linear-gradient(bottom, @color1 16%, @color2 53%, @color3 83%);
+    background-image: linear-gradient(to bottom, @color1 16%, @color2 53%, @color3 83%);
+}
+
+.arrow-border-no-top(@bwidth:7px; @bcolor:#FFF; @width:7px; @height:7px){
+  border-bottom: @bwidth solid @bcolor;
+  border-left: @bwidth - 1  solid transparent;
+  border-right: @bwidth - 1 solid transparent;
+  width: @width;
+  height : @height;
+}

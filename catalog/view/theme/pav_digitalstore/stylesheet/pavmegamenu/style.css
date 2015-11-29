@@ -1,0 +1,98 @@
+.pav-megamenu{
+	position: relative;	
+}
+
+
+.pav-megamenu .dropdown-menu > .dropdown-menu-inner {
+  padding: 10px 10px 0;
+}
+.pav-megamenu .mega-group .caret {
+  display: none;
+}
+.pav-megamenu .mega-group > .dropdown-toggle {
+  display: block;
+  font-weight: bold;
+  padding: 6px 5px;
+  text-transform: uppercase;
+  border-bottom: solid 1px #E5E5E5;
+}
+.pav-megamenu .mega-group .dropdown-mega .mega-col-inner > ul > li a {
+  margin-left: 6px;
+}
+.pav-megamenu .mega-col .mega-col-inner > ul {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+.pav-megamenu .mega-col .mega-col-inner > ul > li {
+  list-style: none;
+  margin-left: 0;
+}
+.pav-megamenu .mega-col .mega-col-inner > ul > li > a {
+  clear: both;
+  color: #555555;
+  display: block;
+  line-height: 20px;
+}
+.pav-megamenu .dropdown-submenu{
+  position: relative;
+
+}
+.pav-megamenu .dropdown-submenu > .dropdown-menu {
+  left: 100%;
+  top: 10px;
+}
+.megamenu .menu-icon{
+     background-position: left center !important;
+    display: block;
+    padding-left: 30px;
+  }
+
+.pav-megamenu .dropdown-menu .row {
+  margin-bottom:  15px;
+}
+.pavo-widget ul li {
+  padding: 0;
+}
+.widget-product-list .image{
+	float: left;
+	margin-right: 10px;
+  border: 1px solid #e7e7e7;
+}
+.widget-banner {
+   border: 1px solid #e7e7e7;
+}
+.widget-banner .w-banner{
+ margin: 6px 10px; 
+	float: left;
+} 
+.pavo-widget .menu-title{    
+    font-family: proximanovalight;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.w-product {
+   margin-bottom: 15px;
+}
+
+.w-product:last-child {
+   margin-bottom: 0;
+}
+.widget-product-list .name a {
+  font-size:  13px;
+  font-weight: bold;
+
+}
+.widget-product-list .price {
+  font-size:  15px;
+   color: #C83A3A;
+}
+.widget-product-list .price-old {
+  text-decoration: line-through;
+  color: #292929;
+   font-size: 12px;
+}
+.hidden-title .menu-title{
+   display:  none;
+}

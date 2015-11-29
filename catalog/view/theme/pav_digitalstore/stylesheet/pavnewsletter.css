@@ -1,0 +1,19 @@
+.newsletter_block {
+}
+.newsletter_block .title_block, .newsletter_block h4 {
+ 
+}
+.newsletter_block p{
+}
+.newsletter_block input.inputNew {    
+	background: #FFFFFF;
+    border-radius: 7px 0 0 7px;
+    padding: 8px 10px;
+    float: left;
+    border: 1px solid #fff;
+}
+.newsletter_block input.button_mini {
+    border-radius: 0 5px 5px 0;
+    color: #FFFFFF;
+    padding: 9px 15px;
+}
